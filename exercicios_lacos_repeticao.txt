@@ -1,0 +1,78 @@
+Exercícios de Laços de Repetição (Python)
+
+1) Soma de 1 até N
+- Entrada: N
+- Saída: 1 + 2 + ... + N
+- Sugestão: use for.
+
+2) Fatorial
+- Entrada: N (inteiro >= 0)
+- Saída: N!
+- Sugestão: use for ou while.
+
+3) Pares de 0 até N
+- Entrada: N
+- Saída: todos os números pares de 0 até N (inclusive)
+- Sugestão: use for.
+
+4) Verificar se é primo
+- Entrada: N
+- Saída: "primo" ou "não primo"
+- Sugestão: use repetição testando divisores.
+
+5) Contar vogais em uma string
+- Entrada: string S
+- Saída: quantidade de vogais (a, e, i, o, u; considere minúsculas e maiúsculas)
+- Sugestão: use for.
+
+6) Média de uma lista
+- Entrada: lista nums (ex.: [1,2,3])
+- Saída: média dos valores
+- Sugestão: use for.
+
+7) Contagem regressiva
+- Entrada: N
+- Saída: N, N-1, ..., 0 (uma linha por número)
+- Sugestão: use while.
+
+8) Somar enquanto for positivo
+- Entrada: sequência de inteiros (simule com lista)
+- Regra: some apenas enquanto os números forem positivos
+- Pare quando aparecer um número negativo
+- Sugestão: use while.
+
+9) Tabuada de N
+- Entrada: N
+- Saída: N x 1 até N x 10
+- Sugestão: use for.
+
+10) Fibonacci até passar de um limite
+- Entrada: limite
+- Saída: todos os termos da Fibonacci <= limite (um por linha ou em lista)
+- Sugestão: use repetição.
+
+11) Contar letras maiúsculas e minúsculas
+- Entrada: string S
+- Saída: quantidade de letras maiúsculas e de minúsculas
+- Sugestão: use for.
+
+12) Inverter string
+- Entrada: string S
+- Saída: S invertida
+- Sugestão: use for.
+
+13) Somar dígitos de um número
+- Entrada: número inteiro N (>=0)
+- Saída: soma dos dígitos
+- Sugestão: use while com divisão e módulo.
+
+14) Converter decimal para binário
+- Entrada: N (inteiro >=0)
+- Saída: representação em binário
+- Sugestão: use while.
+
+15) Encontrar o maior número em uma lista
+- Entrada: lista nums
+- Saída: maior valor
+- Sugestão: use for.
+
