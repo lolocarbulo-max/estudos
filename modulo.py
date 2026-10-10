@@ -1,8 +1,12 @@
+class Saldo:
+    def __init__(self,saldo,chave):
+        self.saldo = saldo
+        self.__chave = chave
+    def sacar(self,chave):
+        if  chave ==  self.__chave:
+            self.saldo = self.saldo - 400
+            print(f"a soque foi concluido o saldo agora e de {self.Saldo}")
+           
+chave = Saldo(1500,"ola")
 
-matriz = [[0] * 4 for _ in range(4)]
-for linhas in range(4):
-    for colunas in range(4):
-        matriz[linhas][colunas] = linhas * colunas
-for linhas in range(4):
-    print(matriz)
-    
+chave.sacar("ola")

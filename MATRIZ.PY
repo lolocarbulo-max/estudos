@@ -1,12 +1,13 @@
 matriz = [
-    [3, 7, 2],
-    [8, 1, 4],
-    [6, 5, 9]
+    [1,2,3],
+    [1,2,3],
+    [1,2,3]
 ]
-total = 0
-for e in matriz:
-    for l in e :
-        total =  total + l
-print(total)
-
-       
+conta  = 0 
+total_dde_linhas =  []
+for linhas, elementos in enumerate(matriz):
+    conta = sum(elementos)
+    total_dde_linhas.append(conta)
+print(total_dde_linhas)
+print(max(total_dde_linhas))
+print(total_dde_linhas.index(max(total_dde_linhas)))
