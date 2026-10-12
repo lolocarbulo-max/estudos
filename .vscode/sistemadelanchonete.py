@@ -5,8 +5,11 @@ class Produto:
         self.estoque_minimo = estoque_minimo
         
     def entrada_de_novos_produtos(self,quantia_de_mercadoria):
-        self.quantidade += quantia_de_mercadoria
-        return self.quantidade
+        if quantia_de_mercadoria > 0 :
+          self.quantidade += quantia_de_mercadoria
+          return self.quantidade
+        else:
+              return " entrada invalida por causa da quantidade "
     def vendas(self,quantidade_vendida):
         if self.quantidade >= quantidade_vendida and quantidade_vendida > 0 :
                     
@@ -47,8 +50,12 @@ while True:
         print("=" * 45)
         print("3 registrar venda")
         print("=" * 45)
-        print("0 sair")
+        print("4 entrada de mercadoria")
         print("=" * 45)
+        print("5 adicionar produto novo")
+        print("=" * 45 )
+        print("0 = sair ")
+        print("=" * 45 )
         opecao = int(input("digite uma opecação"))
 
         if opecao == 1 :
@@ -63,8 +70,23 @@ while True:
                     print(f"produto {pordt2} não encontrado")
               else:
                     print(a.vendas(pordt))
+        elif opecao == 4 :
+            pordt = int(input("digite a quantidade"))
+            pordt2 = input("digite o nomedo produto ") 
+            a = produtus.buscar(pordt2)
+            if a == None:
+                print(f"produto {pordt2} não encontrado")
+            else:
+                  print(a.entrada_de_novos_produtos(pordt))
+        elif opecao == 5:
+              quantidade2 = int(input("digite a quantidade em numeros"))
+              nome2 = input("digite o nome do produto")
+              estoque_minimo = int(input("difite a quantidade minima que vc quer para o estoque"))
+              produto2 = Produto(nome2,quantidade2,estoque_minimo)
+              produtus.adicionar_ao_estoque(produto2)
+              print("produto adicionada com sucesso")
         elif opecao == 0:
               break
         else:
               print("opcçaõ inixestente ")
-        
+     
